@@ -17,8 +17,9 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
-    #volumes: db:
-     #- './volumes/database/data:/var/lib/mysql'
+    volumes: 
+      - './volumes/database/data:/var/lib/mysql'
+      - './volumes/database/dump/users.sql:/docker-entrypoint-initdb.d/datadump.sql'
 
   app:
     build:
