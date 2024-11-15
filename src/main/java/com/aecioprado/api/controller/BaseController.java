@@ -12,6 +12,6 @@ public class BaseController {
     @RequestMapping("/hello-world")
     public ResponseEntity<String> helloWorld() {
         log.info("Acessing hello-world endpoint");
-        return ResponseEntity.ok("Hello World");
+        return ResponseEntity.ok("Hello World test");
     }
 }
