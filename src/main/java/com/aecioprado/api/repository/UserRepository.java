@@ -10,7 +10,4 @@ import com.aecioprado.api.model.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-    @SuppressWarnings("null")
-    Page<User> findAll(Pageable pageable);
-
 }
